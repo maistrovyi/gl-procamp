@@ -1,1 +1,3 @@
-# tbd
+# run
+
+```./mvnw clean install```
