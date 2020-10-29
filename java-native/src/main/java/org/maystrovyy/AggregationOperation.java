@@ -56,7 +56,7 @@ public interface AggregationOperation<K, T, V> {
         }
 
         private BigDecimal calc5Percentage(BigDecimal ratingCountSum, BigDecimal ratingFiveSum) {
-            return ratingFiveSum.compareTo(ZERO) == 0
+            return ratingCountSum.compareTo(ZERO) == 0
                     ? ZERO
                     : ratingFiveSum.divide(ratingCountSum, DECIMAL64).multiply(BigDecimal.valueOf(100), DECIMAL64);
         }
